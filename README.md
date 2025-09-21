@@ -62,6 +62,7 @@ PlayerId: 0c111111-1111-1111-1111-111111111111; PlayerName: "Sybil"), Score: 800
 PlayerId: 0c222222-2222-2222-2222-222222222222; PlayerName: "Trent"), Score: 700
 
 Now, let's try /api/leaderboard with playerId: 0b222222-2222-2222-2222-222222222222
+
 Response includes: 
 {
 	"playerRank": 5,
@@ -75,6 +76,7 @@ Try /api/submit with the body:
   "playerId": "0b222222-2222-2222-2222-222222222222",
   "score": 1000
 }
+
 Now, Response is changed as:
 {
   "playerRank": 4,    // from 5->4
@@ -84,7 +86,9 @@ Now, Response is changed as:
 }
 
 Try /api/Reset without any required parameter
+
 Then again try /api/leaderboard with playerId: 0b222222-2222-2222-2222-222222222222
+
 Now, we just give none players
 {
   "playerRank": 0,
